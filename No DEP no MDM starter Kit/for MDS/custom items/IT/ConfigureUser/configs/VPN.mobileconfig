@@ -28,6 +28,10 @@
 			<dict>
 				<key>AuthName</key>
 				<string>vpn</string>
+
+<key>AuthPassword</key>
+<string>vpn</string>
+
 				<key>CommRemoteAddress</key>
 				<string>public-vpn-110.opengw.net</string>
 			</dict>
