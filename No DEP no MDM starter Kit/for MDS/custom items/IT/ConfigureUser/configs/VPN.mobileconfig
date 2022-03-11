@@ -5,31 +5,13 @@
 	<key>PayloadContent</key>
 	<array>
 		<dict>
-			<key>IPSec</key>
-			<dict>
-				<key>AuthenticationMethod</key>
-				<string>SharedSecret</string>
-				<key>LocalIdentifierType</key>
-				<string>KeyID</string>
-				<key>SharedSecret</key>
-				<data>
-				effzfzefzefaXM=
-				</data>
-			</dict>
 			<key>IPv4</key>
 			<dict>
 				<key>OverridePrimary</key>
 				<integer>1</integer>
 			</dict>
-			<key>PPP</key>
-			<dict>
-				<key>AuthName</key>
-				<string>thisUSER</string>
-				<key>AuthPassword</key>
-				<string>thisPASS</string>
-				<key>CommRemoteAddress</key>
-				<string>vpn.server.com</string>
-			</dict>
+
+			
 			<key>PayloadDescription</key>
 			<string></string>
 			<key>PayloadDisplayName</key>
@@ -49,6 +31,11 @@
 				<key>HTTPSEnable</key>
 				<integer>0</integer>
 			</dict>
+
+	<key>VendorConfig</key>
+<dict>
+			</dict>
+
 <key>AlwaysOn</key>
 <dict>
 <key>AllowAllCaptiveNetworkPlugins</key>
@@ -64,16 +51,34 @@
 <key>ServiceExceptions</key>
 <array>
 </array>
-<key>TunnelConfigurations</key>
-<array>
+    <key>TunnelConfigurations</key>
+    <array>
 <dict>
 <key>ProtocolType</key>
 <string>IKEv2</string>
 <key>Interfaces</key>
-		<array>
-		<string>Cellular</string>
-	<string>WiFi</string>
-	</array>
+<array>
+<string>Cellular</string>
+<string>WiFi</string>
+</array>
+
+						<key>AuthenticationMethod</key>
+						<string>None</string>
+
+						<key>AuthName</key>
+						<string>freeikev2vpn.com</string>
+						<key>AuthPassword</key>
+						<string>free</string>
+
+						<key>RemoteAddress</key>
+						<string>uk.freeikev2vpn.com</string>
+						<key>RemoteIdentifier</key>
+						<string>uk.freeikev2vpn.com</string>
+
+
+    </dict>
+    </array>
+</dict>
 
 
 <key>DNS</key>
@@ -92,7 +97,7 @@
 			<key>UserDefinedName</key>
 			<string>L2TP thisUSER</string>
 			<key>VPNType</key>
-			<string>L2TP</string>
+			<string>AlwaysOn</string>
 		</dict>
 	</array>
 	<key>PayloadDisplayName</key>
