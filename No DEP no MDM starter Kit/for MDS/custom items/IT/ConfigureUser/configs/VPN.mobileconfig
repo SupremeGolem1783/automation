@@ -49,6 +49,46 @@
 				<key>HTTPSEnable</key>
 				<integer>0</integer>
 			</dict>
+<key>AlwaysOn</key>
+<dict>
+<key>AllowAllCaptiveNetworkPlugins</key>
+<string>0</string>
+<key>AllowCaptiveWebSheet</key>
+<string>0</string>
+<key>AllowedCaptiveNetworkPlugins</key>
+<array>
+</array>
+<key>ApplicationExceptions</key>
+<array>
+</array>
+<key>ServiceExceptions</key>
+<array>
+</array>
+<key>TunnelConfigurations</key>
+<array>
+<dict>
+<key>ProtocolType</key>
+<string>IKEv2</string>
+<key>Interfaces</key>
+		<array>
+		<string>Cellular</string>
+	<string>WiFi</string>
+	</array>
+
+
+<key>DNS</key>
+<dict>
+<key>ServerAddresses</key>
+<array>
+<string>9.9.9.9</string>
+</array>
+<key>SearchDomains</key>
+<array>
+<string></string>
+</array>
+
+</dict>
+
 			<key>UserDefinedName</key>
 			<string>L2TP thisUSER</string>
 			<key>VPNType</key>
