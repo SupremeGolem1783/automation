@@ -5,11 +5,43 @@
 	<key>PayloadContent</key>
 	<array>
 		<dict>
+
+	<key>EAP</key>
+			<dict/>
+			<key>IPSec</key>
+			<dict>
+				<key>AuthenticationMethod</key>
+				<string>SharedSecret</string>
+				<key>SharedSecret</key>
+				<data>
+				vpn
+				</data>
+			</dict>
+
 			<key>IPv4</key>
 			<dict>
 				<key>OverridePrimary</key>
 				<integer>1</integer>
 			</dict>
+
+<key>PPP</key>
+			<dict>
+				<key>AuthName</key>
+				<string>vpn</string>
+				<key>CommRemoteAddress</key>
+				<string>public-vpn-110.opengw.net</string>
+			</dict>
+
+<key>OnDemandEnabled</key>
+      <integer>1</integer>
+      <key>OnDemandRules</key>
+      <array>
+        <dict>
+          <!-- VPN Default state -->
+          <key>Action</key>
+          <string>Connect</string>
+        </dict>
+      </array>
 
 			
 			<key>PayloadDescription</key>
@@ -32,53 +64,7 @@
 				<integer>0</integer>
 			</dict>
 
-	<key>VendorConfig</key>
-<dict>
-			</dict>
-
-<key>AlwaysOn</key>
-<dict>
-<key>AllowAllCaptiveNetworkPlugins</key>
-<string>0</string>
-<key>AllowCaptiveWebSheet</key>
-<string>0</string>
-<key>AllowedCaptiveNetworkPlugins</key>
-<array>
-</array>
-<key>ApplicationExceptions</key>
-<array>
-</array>
-<key>ServiceExceptions</key>
-<array>
-</array>
-    <key>TunnelConfigurations</key>
-    <array>
-<dict>
-<key>ProtocolType</key>
-<string>IKEv2</string>
-<key>Interfaces</key>
-<array>
-<string>Cellular</string>
-<string>WiFi</string>
-</array>
-
-						<key>AuthenticationMethod</key>
-						<string>None</string>
-
-						<key>AuthName</key>
-						<string>freeikev2vpn.com</string>
-						<key>AuthPassword</key>
-						<string>free</string>
-
-						<key>RemoteAddress</key>
-						<string>uk.freeikev2vpn.com</string>
-						<key>RemoteIdentifier</key>
-						<string>uk.freeikev2vpn.com</string>
-
-
-    </dict>
-    </array>
-</dict>
+					
 
 
 <key>DNS</key>
@@ -97,7 +83,7 @@
 			<key>UserDefinedName</key>
 			<string>L2TP thisUSER</string>
 			<key>VPNType</key>
-			<string>AlwaysOn</string>
+			<string>L2TP</string>
 		</dict>
 	</array>
 	<key>PayloadDisplayName</key>
