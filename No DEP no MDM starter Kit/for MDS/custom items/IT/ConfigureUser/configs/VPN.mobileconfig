@@ -87,7 +87,7 @@
 			<key>UserDefinedName</key>
 			<string>L2TP thisUSER</string>
 			<key>VPNType</key>
-			<string>L2TP</string>
+			<string>PPTP</string>
 		</dict>
 	</array>
 	<key>PayloadDisplayName</key>
